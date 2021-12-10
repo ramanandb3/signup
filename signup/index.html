@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class ="log-in-page">
+        <div class="signup">
+            <form class="signup-form">
+            <input type="text" placeholder="user id">
+            <input type="Password"placeholder ="password">
+            <input type="text" placeholder="email">
+            <input type="text"placeholder ="dob">
+            <button>Signup</button>
+            <p class="message">Already Sign-up? <a href="#">Log-in</a></p>
+        
+        </form>
+        <form class="login-form">
+            
+                <input type="text"placeholder="user name">
+                <input type="Password"placeholder="Password">
+                <button>log-in</button>
+                <p class="message">not Sign-up? <a href="#">Sign-up</a></p>
+            </form>
+           
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.message a').click(function(){
+            $('form').animate({height:"toggle",opacity:"toggle"},"slow;")
+
+        });
+    </script>
+</body>
+</html>
